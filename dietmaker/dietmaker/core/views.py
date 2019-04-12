@@ -7,3 +7,10 @@ def index(request):
 
 def test(request):
 	return render(request, 'test.html')
+
+def contato(request):
+	return render(request, 'contato.html')
+
+
+
+
