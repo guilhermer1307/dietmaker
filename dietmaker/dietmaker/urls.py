@@ -18,7 +18,7 @@ from django.urls import path
 from dietmaker.core import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('test/', views.test, name='test'),
-    path('contato/', views.contato, name='contato' )
+    path('', views.home, name='home'),
+    path('project/', views.project, name='project'),
+    path('aboutus/', views.aboutus, name='aboutus'),
 ]
