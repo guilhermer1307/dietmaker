@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include 
-from django.conf.urls import url
 from dietmaker.core import views as core_views
 from django.contrib.auth import views as auth_views
 from dietmaker.diet import views as diet_views
+from dietmaker.accounts import views as accounts_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +26,6 @@ urlpatterns = [
     path('project/', core_views.project, name='project'),
     path('aboutus/', core_views.aboutus, name='aboutus'),
     path('login/', auth_views.LoginView.as_view(template_name='accounts/signin.html'), name='login'),
+    path('register/', accounts_views.register, name='register'),
     path('main/', diet_views.main, name='main'),
 ]
