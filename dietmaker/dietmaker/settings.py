@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'dietmaker.core',
-    'dietmaker.accounts'
+    'dietmaker.accounts',
+    'dietmaker.diet',
 ]
 
 MIDDLEWARE = [
