@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}register{% endblock %}
+
+{% block content %}
+  <body class="text-center">
+  	<div class="container">
+  		<div class="row justify-content-md-center">
+  			<div class="col-md-auto">
+				 <form class="form-signin" method="post">
+				  <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+				  <h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>
+				  {% csrf_token %}
+				  <fieldset>
+				  {{form.non_field_erros}}
+				  {% for field in form %}
+				  <div class="col-md-auto">
+					  {{ field.label_tag }}
+					  {{ field }}
+					  {{ field.errors }}
+					  </div> 
+				   {% endfor %}
+				  <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
+				<fieldset>
+				</form>
+				<p></p>
+				<a href="{% url 'home' %}" class="btn btn-secondary btn-block" role="button">Go to Home</a>
+			</div>
+		</div>
+	</div>
+</body>
+{% endblock %}

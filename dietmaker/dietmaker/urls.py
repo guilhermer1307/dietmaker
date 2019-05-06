@@ -14,10 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from dietmaker.core import views
+from django.urls import path, include 
+from dietmaker.core import views as core_views
+from django.contrib.auth import views as auth_views
+from dietmaker.diet import views as diet_views
+from dietmaker.accounts import views as accounts_views
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('test/', views.test, name='test')
+    path('admin/', admin.site.urls),
+    path('', core_views.home, name='home'),
+    path('project/', core_views.project, name='project'),
+    path('aboutus/', core_views.aboutus, name='aboutus'),
+    path('login/', auth_views.LoginView.as_view(template_name='accounts/signin.html'), name='login'),
+    path('register/', accounts_views.register, name='register'),
+    path('main/', diet_views.main, name='main'),
 ]

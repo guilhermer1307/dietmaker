@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+    <!-- Menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="{% url 'home'%}">DietMaker</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'project' %}">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'aboutus' %}">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'main' %}">Hello world</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login' %}">Sign In</a>
+                    </li>
+                    <span class="navbar-text">
+                        |
+                    </span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            </button>
+        </nav>
+    </header>
+    <!-- Final do menu -->
+
+    <!-- Inicio do conteudo -->
+    <main role="main">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Bem vindo a nossa página</h1>
+                <p>No nosso sistema....</p>
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Criei sua conta &raquo;</a></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Heading</h2>
+                    <p>teste</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+            </div>
+
+            <hr>
+
+        </div> <!-- final do conteudo -->
+    </main>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <span class="text-muted">Developed by Mad Insight</span>
+            </div>
+        </div>
+    </footer>
+</body>
+{% endblock %}
