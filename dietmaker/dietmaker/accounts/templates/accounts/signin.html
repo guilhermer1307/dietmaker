@@ -1,32 +1,26 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block title %}Login{% endblock %} {% load staticfiles %} {% block content %}
 
-{% block title %}Login{% endblock %}
-
-{% load staticfiles %}
-
-{% block content %}
-  <body class="text-center">
-  	<div class="jumbotron jumbotron">
-  		<div class="row justify-content-md-center">
-  			<div class="col-md-auto">
-				 <form class="form-signin" method="post">
-				  <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="10" height="100">
-				  <h1 class="h3 mb-3 font-weight-normal"><img src="{% static 'media/logo.png' %}" width="130px" height="55"/></h1>
-				  {% csrf_token %}
-				  {{ form.as_p }}
-				  <button class="btn btn-primary btn-block" type="submit">Entrar</button>
+<body class="text-center">
+	<div class="jumbotron jumbotron">
+		<div class="row justify-content-md-center">
+			<div class="col-md-auto">
+				<form class="form-signin" method="post">
+					<img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="10" height="100">
+					<h1 class="h3 mb-3 font-weight-normal"><img src="{% static 'media/logo.png' %}" width="130px" height="55" /></h1>
+					{% csrf_token %} {{ form.as_p }}
+					<button class="btn btn-primary" type="submit" style="width: 240px;">Entrar</button>
 				</form>
 				<p></p>
-				<a href="{% url 'home' %}" class="btn btn-secondary btn-block" role="button">Vá para a página inicial</a>
+				<a href="{% url 'home' %}" class="btn btn-secondary"  style="width: 240px;" role="button">Vá para a página inicial</a>
 			</div>
 		</div>
 	</div>
-<footer class="footer mt-auto py-3">
-    <div class="container">
-        <div class="d-flex justify-content-center">
-            <span class="text-muted"> Desenvolvido por Mad Insight</span>
-        </div>
-    </div>
-</footer>
+	<footer class="footer mt-auto py-3">
+		<div class="container">
+			<div class="d-flex justify-content-center">
+				<span class="text-muted"> Desenvolvido por Mad Insight</span>
+			</div>
+		</div>
+	</footer>
 </body>
 {% endblock %}
