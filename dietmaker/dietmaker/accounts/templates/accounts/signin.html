@@ -7,7 +7,16 @@
 				<form class="form-signin" method="post">
 					<img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="10" height="100">
 					<h1 class="h3 mb-3 font-weight-normal"><img src="{% static 'media/logo.png' %}" width="130px" height="55" /></h1>
-					{% csrf_token %} {{ form.as_p }}
+					{% csrf_token %}
+					<label for="username">Username:</label>
+          			<input type="text" name="username" placeholder="Username">
+       				<label for="password">Password:</label>
+          			<input type="password" name="password" placeholder="Password">
+          			{% if form.non_field_errors %}
+            		{% for error in form.non_field_errors %}
+                        <p class="text-danger">{{ error }}</p>
+                    {% endfor %}
+                    {% endif %}
 					<button class="btn btn-primary" type="submit" style="width: 240px;">Entrar</button>
 				</form>
 				<p></p>
