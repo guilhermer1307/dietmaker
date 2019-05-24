@@ -27,5 +27,6 @@ urlpatterns = [
     path('aboutus/', core_views.aboutus, name='aboutus'),
     path('login/', auth_views.LoginView.as_view(template_name='accounts/signin.html'), name='login'),
     path('register/', accounts_views.register, name='register'),
+    path('contact/', core_views.contact, name='contact'),
     path('main/', diet_views.main, name='main'),
     ]
