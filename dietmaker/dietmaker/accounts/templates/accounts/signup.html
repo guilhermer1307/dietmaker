@@ -14,15 +14,18 @@
                     <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
                     <h1 class="h3 mb-3 font-weight-normal"><img src="{% static 'media/logo.png' %}" width="130px" height="55"/></h1>
                     {% csrf_token %}
-                    <fieldset>
-                        {{form.non_field_erros}}
-                        {% for field in form %}
-                        <div class="col-md-auto ">
-                            {{ field.label_tag }}
+                    {% for non_field_error in form.non_field_errors %}
+                        <p class="help is-danger">{{ non_field_error }}</p>
+                    {% endfor %}
+                    {% for field in form %}
+                        <div class="field">
+                            <label for="{{ field.id_for_label }}" class="label">{{ field.html_name }}</label>
                             {{ field }}
-                            {{ field.errors }}
-                        </div>
+                        {% for error in field.errors %}
+                            <p class="help is-danger">{{ error }}</p>
                         {% endfor %}
+                        </div>
+                    {% endfor %}
                     <button class="btn btn-primary btn-block" type="submit">Entrar</button>
                 </form>
                 <p></p>
