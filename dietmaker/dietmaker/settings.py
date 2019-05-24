@@ -12,6 +12,13 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
+#importar imagens para o projeto.
+ROOTDIR = os.path.dirname(__file__)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(ROOTDIR, 'media')
+ADMIN_MEDIA_PREFIX = 'admin_media'
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -24,6 +31,7 @@ SECRET_KEY = 'ay1cez600-q71da#gsjn6_%-tltkf#(#y7w%7)bp&va*3x*1_&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
 
 ALLOWED_HOSTS = []
 
@@ -124,3 +132,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = 'login'
+
