@@ -19,10 +19,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'alunos' %}">Alunos</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="{% url 'professor' %}">Professor</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="{% url 'alimentos' %}">Alimentos</a>
                 </li>
             </ul>
@@ -47,37 +47,20 @@
 <!-- Inicio do conteudo -->
 <main role="main">
     <div class="container">
+
+        <div class="offset-2"><h1>Professor</h1></div>
         <div class="jumbotron col-10 row justify-content mx-auto mt-4">
-            <h1><p>dieta</p></h1>
-            <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">iron maiden</th>
-              <th scope="col">avenged sevenfold</th>
-              <th scope="col">nightwish</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+            <div class="container bg-white">
+                <form class="form-signin mt-4" method="post">
+					{% csrf_token %}
+                    <p>
+					<label for="dietname">Diet name:</label>
+          			<input type="text" name="username" placeholder="dietname">
+                    <P>
+       				<label for="user_id">user id:</label>
+          			<input type="text" name="user_id" placeholder="user_id">
+
+            </div>
         </div>
         <!-- Example row of columns -->
     </div>
