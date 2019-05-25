@@ -9,6 +9,17 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="{% url 'home'%}"><img src="{% static 'media/logo.png' %}" width="130px"
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<body>
+<!-- Menu -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{% url 'main'%}"><img src="{% static 'media/logo.png' %}" width="130px"
                                                             height="55"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,13 +27,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'alunos' %}">Alunos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'professor' %}">Professor</a>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'home' %}">Página Inicial</a>
+                    <a class="nav-link" href="{% url 'alimentos' %}">Alimentos</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'main' %}">Logout</a>
+                        <a class="nav-link">Nome do aluno</a>
+                    </li>
+                <span class="navbar-text">
+                        |
+                    </span>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Logout</a>
                 </li>
             </ul>
         </div>
@@ -34,58 +58,20 @@
 <!-- Inicio do conteudo -->
 <main role="main">
     <div class="container">
-        <div class="jumbotron col-10 row justify-content-center mx-auto mt-4">
-            coluna 1
 
+        <div class="offset-2"><h1>Alunos</h1></div>
+        <div class="jumbotron col-10 row justify-content mx-auto mt-4">
+            <div class="container bg-white">
+
+
+            </div>
         </div>
         <!-- Example row of columns -->
     </div>
     <hr>
 
 
-    <!-- formulário de requerimento de usuário -->
-
-<center>
-
-    <form>
-        <div class="jumbotron col-10    ">
-        <div class="col-md-4">
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Altura</label>
-            <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-            <input type="number" class="form-control" id="exampleFormControlInput1"
-                   placeholder="Insira sua altura">
-        </div>
-            </div>
-        <div class="form-group">
-            <div class="col-md-4">
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Peso</label>
-            <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-            <input type="number" class="form-control" id="exampleFormControlInput1"
-                   placeholder="Isira seu peso">
-        </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-4">
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Idade</label>
-            <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-            <input type="number" class="form-control" id="exampleFormControlInput1"
-                   placeholder="Insira sua idade">
-        </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-4">
-            <label for="exampleFormControlTextarea1">Objetivo</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        </div>
-            <a class="btn btn-success btn-lg" href="#" role="button">Gerar Dieta &raquo;</a>
-        </div>
-    </center>
-
-        <!-- final do conteudo -->
+        <!-- final do jumbotron -->
 </main>
 
 <footer class="footer mt-auto py-3">
