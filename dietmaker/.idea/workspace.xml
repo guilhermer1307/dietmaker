@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2e6fe76a-35eb-4ca3-85ae-07f829c759a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dietmaker/diet/templates/alimentos.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/diet/templates/alimentos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dietmaker/diet/templates/alunos.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/diet/templates/alunos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dietmaker/diet/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/diet/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dietmaker/diet/templates/professor.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/diet/templates/professor.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,51 +29,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dietmaker/urls.py">
+        <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/alunos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="e#633#665#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="396">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/alunos.html">
+        <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/professor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+            <state relative-caret-position="198">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/professor.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="74" column="36" lean-forward="true" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/alimentos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+            <state relative-caret-position="275">
+              <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dietmaker/diet/models.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/dietmaker/accounts/templates/accounts/signin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-354" />
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dietmaker/diet/apps.py">
+        <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/login.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -86,8 +80,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+            <state relative-caret-position="330">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="38" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -112,11 +115,11 @@
         <option value="$PROJECT_DIR$/dietmaker/diet/templates/alimentos.html.py" />
         <option value="$PROJECT_DIR$/dietmaker/diet/templates/professores.html" />
         <option value="$PROJECT_DIR$/dietmaker/diet/views.py" />
-        <option value="$PROJECT_DIR$/dietmaker/diet/templates/professor.html" />
+        <option value="$PROJECT_DIR$/dietmaker/urls.py" />
         <option value="$PROJECT_DIR$/dietmaker/diet/templates/main.html" />
+        <option value="$PROJECT_DIR$/dietmaker/diet/templates/professor.html" />
         <option value="$PROJECT_DIR$/dietmaker/diet/templates/alunos.html" />
         <option value="$PROJECT_DIR$/dietmaker/diet/templates/alimentos.html" />
-        <option value="$PROJECT_DIR$/dietmaker/urls.py" />
       </list>
     </option>
   </component>
@@ -143,6 +146,27 @@
               <item name="dietmaker" type="b2602c69:ProjectViewProjectNode" />
               <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
               <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dietmaker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dietmaker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dietmaker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dietmaker" type="b2602c69:ProjectViewProjectNode" />
@@ -232,18 +256,6 @@
     <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/project.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="38" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -269,27 +281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/alunos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/alimentos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dietmaker/diet/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -312,10 +303,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/professor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="74" column="36" lean-forward="true" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+        <state relative-caret-position="198">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/alunos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dietmaker/accounts/templates/accounts/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-354" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/alimentos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
         </state>
       </provider>
     </entry>
