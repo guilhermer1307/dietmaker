@@ -29,7 +29,10 @@ urlpatterns = [
     path('register/', accounts_views.register, name='register'),
     path('contact/', core_views.contact, name='contact'),
     path('main/', diet_views.main, name='main'),
-    path('alunos/', diet_views.alunos, name='alunos'),
-    path('professor/', diet_views.professor, name='professor'),
     path('alimentos/', diet_views.alimentos, name='alimentos'),
+    path('professor/', diet_views.professor, name='professor'),
+    path('alunos/', diet_views.alunos, name='alunos'),
+    path('rel', accounts_views.rel, name = 'rel'),
+    path('createfood', accounts_views.create_food, name = 'createfood'),
+    path('creatediet', accounts_views.create_diet, name = 'creatediet'),
     ]
