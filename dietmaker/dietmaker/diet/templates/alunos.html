@@ -51,7 +51,14 @@
         <div class="offset-2"><h1>Alunos</h1></div>
         <div class="jumbotron col-10 row justify-content mx-auto mt-4">
             <div class="container bg-white">
-
+                <form class="form-signin mt-4" method="post">
+					{% csrf_token %}
+                    <p>
+					<label for="dietname">Diet name:</label>
+          			<input type="text" name="username" placeholder="dietname">
+                    <P>
+       				<label for="user_id">user id:</label>
+          			<input type="text" name="user_id" placeholder="user_id">
 
             </div>
         </div>
