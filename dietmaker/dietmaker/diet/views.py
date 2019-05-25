@@ -5,3 +5,13 @@ from django.http import HttpResponse
 
 def main(request):
 	return render(request, 'main.html')
+
+def alunos(request):
+	return render(request, 'main.html')
+
+def professor(request):
+	return render(request, 'main.html')
+
+def alimentos(request):
+	return render(request, 'main.html')
+
