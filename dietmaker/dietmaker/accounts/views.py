@@ -4,11 +4,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.conf import settings
 from dietmaker.accounts.models import *
 
-def getuserid(request):
-	user = request.user
-	print(user)
-	return user
-
 def dashboard(request):
 	template_name = 'accounts/dashboard.html'
 	return render(request, template_name)
@@ -30,7 +25,7 @@ def register(request):
 def create_diet(request):
 	if request.method == "POST":
 		name    = request.POST['dietname']
-		user_id = request.POST['user_id']
+		user_id = request.user
 
 		Diets.objects.create(
 			name = name,
