@@ -29,7 +29,7 @@ urlpatterns = [
     path('register/', accounts_views.register, name='register'),
     path('contact/', core_views.contact, name='contact'),
     path('main/', diet_views.main, name='main'),
-    path('alunos/', diet_views.main, name='alunos'),
-    path('professores/', diet_views.main, name='professores'),
-    path('alimentos/', diet_views.main, name='alimentos'),
+    path('alunos/', diet_views.alunos, name='alunos'),
+    path('professor/', diet_views.professor, name='professor'),
+    path('alimentos/', diet_views.alimentos, name='alimentos'),
     ]
