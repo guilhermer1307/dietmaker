@@ -29,4 +29,7 @@ urlpatterns = [
     path('register/', accounts_views.register, name='register'),
     path('contact/', core_views.contact, name='contact'),
     path('main/', diet_views.main, name='main'),
+    path('creatediet', accounts_views.create_diet, name = 'creatediet'),
+    path('createfood', accounts_views.create_food, name = 'createfood'),
+    path('rel', accounts_views.rel, name = 'rel'),
     ]
