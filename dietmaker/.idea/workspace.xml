@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e6fe76a-35eb-4ca3-85ae-07f829c759a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dietmaker/diet/templates/alimentos.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/diet/templates/alimentos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dietmaker/diet/templates/alunos.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/diet/templates/alunos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dietmaker/diet/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/diet/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dietmaker/diet/templates/professores.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/diet/templates/professor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dietmaker/diet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/diet/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dietmaker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dietmaker/diet/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -51,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/professor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+            <state relative-caret-position="308">
+              <caret line="74" column="36" lean-forward="true" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -265,13 +259,6 @@
         <state relative-caret-position="-792" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/professor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dietmaker/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -322,6 +309,13 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/professor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="74" column="36" lean-forward="true" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
         </state>
       </provider>
     </entry>
