@@ -8,7 +8,7 @@
 <!-- Menu -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'dietas'%}"><img src="{% static 'media/logo.png' %}" width="130px"
+        <a class="navbar-brand" href="{% url 'main'%}"><img src="{% static 'media/logo.png' %}" width="130px"
                                                             height="55"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,15 +17,18 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'dietas' %}">Dietas</a>
+                    <a class="nav-link" href="{% url 'alunos' %}">Alunos</a>
                 </li>
                 <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'professor' %}">Professor</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{% url 'alimentos' %}">Alimentos</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                        <a class="nav-link">{{ user }}</a>
+                        <a class="nav-link">Nome do aluno</a>
                     </li>
                 <span class="navbar-text">
                         |
@@ -45,52 +48,18 @@
 <main role="main">
     <div class="container">
 
-        <div class="offset-1"><h1>Alimentos</h1></div>
+        <div class="offset-2"><h1>Professor</h1></div>
         <div class="jumbotron col-10 row justify-content mx-auto mt-4">
             <div class="container bg-white">
-                <form action="/createfood" class="form-signin mt-4" method="post">
+                <form class="form-signin mt-4" method="post">
 					{% csrf_token %}
                     <p>
-					<label for="dietname">Nome do alimento:</label>
-          			<input type="text" name="name" placeholder="">
-                    <p>
-                    <label for="dietname">Carboidratos:</label>
-                    <input type="number" name="carbo" placeholder="">
+					<label for="dietname">Diet name:</label>
+          			<input type="text" name="username" placeholder="dietname">
                     <P>
-                    <label for="dietname">Proteinas:</label>
-                    <input type="number" name="prot" placeholder="">
-                    <P>
-<<<<<<< HEAD
-                    <label for="dietname">Gordura:</label>
-                    <input type="number" name="fat" placeholder="">
-                    <p>
-                    <button class="btn btn-success" type="submit" style="width: 240px;">Adicionar alimento</button>
-            </div>
-            <div class="container bg-white">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Carboidratos</th>
-                            <th scope="col">Proteinas</th>
-                            <th scope="col">Gorduras</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                {% for alimento in alimentos %}
-                <tr>
-                <td>{{ alimento.name }}</td>
-                <td>{{ alimento.carbo }}</td>
-                <td>{{ alimento.prot }}</td>
-                <td>{{ alimento.fat }}</td>
-            </tr>
-                {% endfor %}
-                    </tbody>
-            </table>
-=======
        				<label for="user_id">user id:</label>
           			<input type="text" name="user_id" placeholder="user_id">
->>>>>>> test
+
             </div>
         </div>
         <!-- Example row of columns -->
