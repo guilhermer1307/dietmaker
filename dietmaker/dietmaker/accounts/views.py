@@ -3,6 +3,12 @@ from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.conf import settings
 from dietmaker.accounts.models import *
+from django.contrib.auth import logout
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('/')
 
 def dashboard(request):
 	template_name = 'accounts/dashboard.html'
@@ -31,9 +37,9 @@ def create_diet(request):
 			name = name,
 			user = user_id
 			)
-		return redirect("/")
+		return redirect("/dietas")
 	else:
-		return redirect("/")
+		return redirect("/dietas")
 
 def create_food(request):
 	if request.method == "POST":
@@ -48,20 +54,20 @@ def create_food(request):
 	    	prot  = prot,
 	    	fat   = fat
 	    	)
-		return redirect("/")
+		return redirect("/alimentos")
 	else:
-		return redirect("/")
+		return redirect("/alimentos")
 
 def rel(request):
 	if request.method == "POST":
-		food_id = request.POST['food_id']
-		diet_id = request.POST['diet_id']
+		food_id_test = request.POST['food_id']
+		diet_id_test = request.POST['diet_id']
 
 		Diet_foods.objects.create(
-			food = food_id,
-			diet = diet_id
+			food = Foods.objects.get(id = food_id_test),
+			diet = Diets.objects.get(id = diet_id_test)
 			)
-		return redirect("/")
+		return redirect("/dietas")
 	else:
-		return redirect("/")
+		return redirect("/dietas")
 
