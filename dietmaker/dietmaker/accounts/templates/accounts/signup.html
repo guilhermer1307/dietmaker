@@ -17,18 +17,22 @@
                         <p class="help is-danger">{{ non_field_error }}</p>
                     {% endfor %}
                     {% for field in form %}
-                        <div class="field">
-                            <label for="{{ field.id_for_label }}" class="label">{{ field.html_name }}</label>
-                            {{ field }}
+                    {% if field.name == 'username' %}
+                            <p>
+                            <input for="{{field.id_for_label}}" type="text" class="form-control ml-auto mr-auto " style="width: 240px;" name="{{ field.name }}" placeholder="{{ field.label }}">
+                            <p>
+                    {% else %}
+                            <input for="{{field.id_for_label}}" type="password" class="form-control ml-auto mr-auto " style="width: 240px;" name="{{ field.name }}" placeholder="{{ field.label }}">
+                            <p>
+                    {%endif%}
                         {% for error in field.errors %}
-                            <p class="help is-danger">{{ error }}</p>
+                            <p class="alert alert-danger col-md-auto mt-3">{{ error }}</p>
                         {% endfor %}
-                        </div>
                     {% endfor %}
-                    <button class="btn btn-success btn-block" type="submit">Entrar</button>
+                    <button class="btn btn-success mt-5" type="submit" style="width: 240px;">Registrar-se</button>
                 </form>
                 <p></p>
-                <a href="{% url 'home' %}" class="btn btn-secondary btn-block" role="button">Vá para a página inicial</a>
+                <a href="{% url 'home' %}" class="btn btn-secondary"  style="width: 240px;" role="button">Vá para a página inicial</a>
             </div>
         </div>
     </div>
