@@ -44,64 +44,67 @@
 <!-- Inicio do conteudo -->
 <main role="main">
     <div class="container">
-
+        <p>
         <div class="offset-1"><h1>Dietas</h1></div>
         <div class="jumbotron col-10 row justify-content mx-auto mt-4">
             <div class="container bg-white">
                 <form action="/creatediet" class="form-signin mt-4" method="post">
                     <p>
-					<label for="dietname">Nome da dieta:</label>
-          			<input type="text" name="dietname" placeholder="Dieta" pattern=".{4,45}" required>
+          			<input class="form-control ml-auto mr-auto" type="text" name="dietname" placeholder="Nova Dieta" pattern=".{4,45}" required>
                     <p>
-                    <button class="btn btn-success" type="submit" style="width: 240px;">Criar dieta</button>
+                    <button class="btn btn-success" type="submit" style="width: 200px; height: 40px;">Criar dieta</button>
                     {% csrf_token %}
                 </form>
                 <form action="/rel" class="form-signin mt-4" method="post">
                     <p>
-                    <label for="dietname">Relacionar alimento</label>
-                    <select name="diet_id">
+                    <label style="color:green; font-size:21px;"for="dietname">Relacionar alimento</label>
+                    <select name="diet_id" class="form-control">
+                    <option selected disabled>Escolha a dieta</option>
                     {% for dieta in dietas %}
                     <option value="{{ dieta.id }}">{{ dieta.name }}</option>
                     {% endfor %}
                     </select>
-                    <select name="food_id">
+                    <select name="food_id" class="form-control">
+                    <option selected disabled>Escolha o alimento</option>
                     {% for alimento in alimentos %}
                     <option value="{{ alimento.id }}">{{ alimento.name }}</option>
                     {% endfor %}
                     </select>
                     <p>
-                    <button class="btn btn-success" type="submit" style="width: 240px;">Relacionar</button>
+                    <button class="btn btn-success" type="submit" style="width: 240px;">Adicionar alimento na dieta</button>
                     {% csrf_token %}
                 </form>
             <div class="container bg-white">
                 {% for dieta in dietas %}
-                <p>{{ dieta.name }}</p>
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Carboidratos</th>
-                            <th scope="col">Proteinas</th>
-                            <th scope="col">Gorduras</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                {% for alimento in alimentos %}
-                {% for rel in ali_in_diet %}
-                {% if alimento.id == rel.food_id and dieta.id == rel.diet_id %}
-                <tr>
-                <td>{{ alimento.name }}</td>
-                <td>{{ alimento.carbo }}</td>
-                <td>{{ alimento.prot }}</td>
-                <td>{{ alimento.fat }}</td>
-                </tr>
-                {% endif %}
-                {% endfor %}
-                <tbody>
-                {% endfor %}
-                </table>
-                {% endfor %}
-            </div>
+                <p>
+                <a style="text-decoration: underline; text-decoration-color: green; color:black; font-size:20px;"data-toggle="collapse" href="#text{{dieta.id}}">{{dieta.name}}</a>
+                <div class="collapse" id="text{{dieta.id}}">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Carboidratos</th>
+                                <th scope="col">Proteinas</th>
+                                <th scope="col">Gorduras</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                    {% for alimento in alimentos %}
+                    {% for rel in ali_in_diet %}
+                    {% if alimento.id == rel.food_id and dieta.id == rel.diet_id %}
+                    <tr>
+                    <td>{{ alimento.name }}</td>
+                    <td>{{ alimento.carbo }}</td>
+                    <td>{{ alimento.prot }}</td>
+                    <td>{{ alimento.fat }}</td>
+                    </tr>
+                    {% endif %}
+                    {% endfor %}
+                    </tbody>
+                    {% endfor %}
+                    </table>
+                    </div>
+                    {% endfor %}
             </div>
         </div>
         <!-- Example row of columns -->

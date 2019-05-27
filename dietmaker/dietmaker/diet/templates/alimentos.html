@@ -44,28 +44,25 @@
 <!-- Inicio do conteudo -->
 <main role="main">
     <div class="container">
-
+        <p>
         <div class="offset-1"><h1>Alimentos</h1></div>
         <div class="jumbotron col-10 row justify-content mx-auto mt-4">
             <div class="container bg-white">
                 <form action="/createfood" class="form-signin mt-4" method="post">
 					{% csrf_token %}
                     <p>
-					<label for="dietname">Nome do alimento:</label>
-          			<input type="text" name="name" placeholder="" pattern=".{3,45}" required>
+          			<input class="form-control ml-auto mr-auto" type="text" name="name" placeholder="Nome do alimento" pattern=".{2,45}" required>
                     <p>
-                    <label for="dietname">Carboidratos:</label>
-                    <input type="number" name="carbo" placeholder=""  pattern="{1,3}" required>
+                    <input class="form-control ml-auto mr-auto" type="number" name="carbo" placeholder="Carboidratos Ex:100"  maxlength="10" required>
                     <P>
-                    <label for="dietname">Proteinas:</label>
-                    <input type="number" name="prot" placeholder="" pattern="{1,3}" required>
+                    <input class="form-control ml-auto mr-auto" type="number" name="prot" placeholder="Proteinas Ex:50" maxlength="10" required>
                     <P>
-                    <label for="dietname">Gordura:</label>
-                    <input type="number" name="fat" placeholder="" pattern="{1,3}" required>
+                    <input class="form-control ml-auto mr-auto" type="number" name="fat" placeholder="Gordura Ex:10" maxlength="10" required>
                     <p>
                     <button class="btn btn-success" type="submit" style="width: 240px;">Adicionar alimento</button>
             </div>
             <div class="container bg-white">
+                <div class="offset-0"><h3 style="color:green; font-size:21px;">Tabela de alimentos</h3></div>
                 <table class="table table-hover">
                     <thead>
                         <tr>

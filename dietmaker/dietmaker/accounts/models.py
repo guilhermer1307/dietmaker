@@ -5,9 +5,9 @@ from django.conf import settings
 
 class Foods(models.Model):
 	name = models.CharField(max_length=100)
-	carbo = models.DecimalField(max_digits=5,decimal_places=2)
-	prot = models.DecimalField(max_digits=5,decimal_places=2)
-	fat = models.DecimalField(max_digits=5,decimal_places=2)
+	carbo = models.DecimalField(max_digits=10,decimal_places=2)
+	prot = models.DecimalField(max_digits=10,decimal_places=2)
+	fat = models.DecimalField(max_digits=10,decimal_places=2)
 
 class Diets(models.Model):
 	name = models.CharField(max_length=100)
