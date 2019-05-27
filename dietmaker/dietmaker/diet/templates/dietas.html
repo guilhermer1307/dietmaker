@@ -8,8 +8,8 @@
 <!-- Menu -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'dietas'%}"><img src="{% static 'media/logo.png' %}" width="130px"
-                                                            height="55"/></a>
+        <a class="navbar-brand" href="{% url 'dietas'%}"><img src="{% static 'media/logo.png' %}" width="120px"
+                                                            height="56"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -17,22 +17,22 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'dietas' %}">Dietas</a>
+                    <a class="nav-link active"  style="font-size: 16px;" href="{% url 'dietas' %}">Dietas</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="{% url 'alimentos' %}">Alimentos</a>
+                    <a class="nav-link"  style="font-size: 16px;" href="{% url 'alimentos' %}">Alimentos</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                        <a class="nav-link">{{ user }}</a>
+                        <a class="nav-link"  style="font-size: 16px;" >{{ user }}</a>
                     </li>
                 <span class="navbar-text">
                         |
                     </span>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                    <a class="nav-link" style="font-size: 16px;" href="{% url 'logout' %}">Logout</a>
                 </li>
             </ul>
         </div>
@@ -57,18 +57,20 @@
                 </form>
                 <form action="/rel" class="form-signin mt-4" method="post">
                     <p>
-                    <label style="color:green; font-size:21px;"for="dietname">Relacionar alimento</label>
+                    <label style="color:green; font-size:21px;" for="dietname">Relacionar alimento</label>
                     <select name="diet_id" class="form-control">
-                    <option selected disabled>Escolha a dieta</option>
+                    <optgroup label="Escolha a dieta">
                     {% for dieta in dietas %}
                     <option value="{{ dieta.id }}">{{ dieta.name }}</option>
                     {% endfor %}
                     </select>
+                </optgroup>
                     <select name="food_id" class="form-control">
-                    <option selected disabled>Escolha o alimento</option>
+                    <optgroup label="Escolha o alimento">
                     {% for alimento in alimentos %}
                     <option value="{{ alimento.id }}">{{ alimento.name }}</option>
                     {% endfor %}
+                </optgroup>
                     </select>
                     <p>
                     <button class="btn btn-success" type="submit" style="width: 240px;">Adicionar alimento na dieta</button>

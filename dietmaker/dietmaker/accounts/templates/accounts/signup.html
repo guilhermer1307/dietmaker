@@ -11,7 +11,7 @@
         <div class="row justify-content-md-center">
             <div class="col-md-auto">
                 <form class="form-signin" method="post">
-                    <h1 class="h3 mb-3 font-weight-normal"><img src="{% static 'media/logo.png' %}" width="130px" height="55"/></h1>
+                    <h1 class="h3 mb-3 font-weight-normal"><img src="{% static 'media/logo.png' %}" width="191px" height="90"/></h1>
                     {% csrf_token %}
                     {% for non_field_error in form.non_field_errors %}
                         <p class="help is-danger">{{ non_field_error }}</p>

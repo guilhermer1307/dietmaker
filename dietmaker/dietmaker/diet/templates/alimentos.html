@@ -8,31 +8,31 @@
 <!-- Menu -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'dietas'%}"><img src="{% static 'media/logo.png' %}" width="130px"
-                                                            height="55"/></a>
+        <a class="navbar-brand" href="{% url 'dietas'%}"><img src="{% static 'media/logo.png' %}" width="120px"
+                                                            height="56"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse"  id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'dietas' %}">Dietas</a>
+                    <a class="nav-link" style="font-size: 16px;" href="{% url 'dietas' %}">Dietas</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'alimentos' %}">Alimentos</a>
+                    <a class="nav-link" style="font-size: 16px;" href="{% url 'alimentos' %}">Alimentos</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                        <a class="nav-link">{{ user }}</a>
+                        <a class="nav-link" style="font-size: 16px;">{{ user }}</a>
                     </li>
                 <span class="navbar-text">
                         |
                     </span>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'home' %}">Logout</a>
+                    <a class="nav-link" style="font-size: 16px;" href="{% url 'home' %}">Logout</a>
                 </li>
             </ul>
         </div>
