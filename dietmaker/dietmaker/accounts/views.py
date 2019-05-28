@@ -71,3 +71,27 @@ def rel(request):
 	else:
 		return redirect("/dietas")
 
+def delete_diet(request): 
+	if request.method == "POST": 
+		name    = request.POST['dietname'] 
+		user_id = request.user 
+ 
+		obj = Diets.objects.get(name = name, user = user_id) 
+		relations = Diet_foods.objects.filter(diet = obj) 
+		obj.delete() 
+		relations.delete() 
+		return redirect("/dietas") 
+	else: 
+		return redirect("/dietas") 
+
+def delete_food(request): 
+	if request.method == "POST": 
+		name    = request.POST['foodname'] 
+ 
+		obj = Foods.objects.get(name = name) 
+		relations = Diet_foods.objects.filter(food = obj) 
+		obj.delete() 
+		relations.delete() 
+		return redirect("/alimentos") 
+	else: 
+		return redirect("/alimentos") 
