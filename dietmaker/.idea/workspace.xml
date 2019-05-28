@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e6fe76a-35eb-4ca3-85ae-07f829c759a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dietmaker/core/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/core/templates/aboutus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dietmaker/core/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/core/templates/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dietmaker/core/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/core/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dietmaker/core/templates/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/dietmaker/core/templates/project.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dietmaker/accounts/templates/accounts/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="174">
+              <caret line="10" column="49" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="49" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#p#1;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#p#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -61,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="306">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#!!top" expanded="true" />
@@ -74,14 +75,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="54" column="64" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+            <state relative-caret-position="218">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/project.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/aboutus.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -111,6 +130,8 @@
         <option value="$PROJECT_DIR$/dietmaker/diet/templates/alunos.html" />
         <option value="$PROJECT_DIR$/dietmaker/diet/templates/professor.html" />
         <option value="$PROJECT_DIR$/dietmaker/accounts/templates/accounts/signup.html" />
+        <option value="$PROJECT_DIR$/dietmaker/core/templates/aboutus.html" />
+        <option value="$PROJECT_DIR$/dietmaker/core/templates/project.html" />
         <option value="$PROJECT_DIR$/dietmaker/core/templates/home.html" />
         <option value="$PROJECT_DIR$/dietmaker/core/templates/contact.html" />
       </list>
@@ -144,6 +165,21 @@
               <item name="dietmaker" type="b2602c69:ProjectViewProjectNode" />
               <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
               <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dietmaker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dietmaker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="dietmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="accounts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -231,9 +267,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/project.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/dietmaker/diet/templates/alimentos.html.py" />
     <entry file="file://$PROJECT_DIR$/dietmaker/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -291,17 +324,6 @@
     <entry file="file://$PROJECT_DIR$/dietmaker/diet/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dietmaker/accounts/templates/accounts/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#p#1;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#p#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/login.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -310,10 +332,28 @@
         <state relative-caret-position="-198" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dietmaker/accounts/templates/accounts/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#p#1;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#p#2;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="306">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#!!top" expanded="true" />
@@ -326,11 +366,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="54" column="64" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+        <state relative-caret-position="218">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dietmaker/core/templates/aboutus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
         </state>
       </provider>
     </entry>
