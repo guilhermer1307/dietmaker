@@ -32,6 +32,8 @@ urlpatterns = [
     path('alimentos/', diet_views.alimentos, name = 'alimentos'),
     path('creatediet', accounts_views.create_diet, name = 'creatediet'),
     path('createfood', accounts_views.create_food, name = 'createfood'),
+    path('deletediet', accounts_views.delete_diet, name = 'deletediet'),
+    path('deletefood', accounts_views.delete_food, name = 'deletefood'),  
     path('rel', accounts_views.rel, name = 'rel'),
     path('logout', accounts_views.logout_view, name = 'logout'),
     ]
