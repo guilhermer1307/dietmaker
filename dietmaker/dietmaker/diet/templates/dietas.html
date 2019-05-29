@@ -68,14 +68,14 @@
                 <form action="/rel" class="form-signin mt-4" method="post">
                     <p>
                     <label style="color:green; font-size:21px;" for="dietname">Relacionar alimento</label>
-                    <select name="diet_id" class="form-control">
+                    <select name="diet_id" class="form-control mt-3">
                     <optgroup label="Escolha a dieta">
                     {% for dieta in dietas %}
                     <option value="{{ dieta.id }}">{{ dieta.name }}</option>
                     {% endfor %}
                     </select>
                 </optgroup>
-                    <select name="food_id" class="form-control">
+                    <select name="food_id" class="form-control mt-4">
                     <optgroup label="Escolha o alimento">
                     {% for alimento in alimentos %}
                     <option value="{{ alimento.id }}">{{ alimento.name }}</option>
